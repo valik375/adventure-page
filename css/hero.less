@@ -5,6 +5,13 @@
   width: 100%;
   height: 700px;
   position: relative;
+
+  @media only screen and (min-width: 760px) {
+
+  }
+  @media only screen and (min-width: 1280px) {
+
+  }
 }
 .hero__background {
   width: 100%;
@@ -18,6 +25,22 @@
 }
 .hero__background_mobile {
   display: block;
+  @media only screen and (min-width: 760px) {
+    display: none;
+  }
+}
+.hero__background_tablet {
+  @media only screen and (min-width: 760px) {
+    display: block;
+  }
+  @media only screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.hero__background_desktop {
+  @media only screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 .hero__container {
   width: 100%;
@@ -27,12 +50,15 @@
   justify-content: center;
 }
 .hero__content {
-  width: 100%;
-  max-width: 380px;
+  width: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media only screen and (min-width: 760px) {
+    width: 500px;
+  }
 }
 .hero__title {
   font-family: 'Quiza Pro', sans-serif;
@@ -43,6 +69,12 @@
   letter-spacing: -1.5px;
   color: #FFFFFF;
   margin-bottom: 20px;
+
+  @media only screen and (min-width: 760px) {
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: -0.01em;
+  }
 }
 .hero__button {
   width: 149px;
