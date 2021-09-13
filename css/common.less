@@ -23,6 +23,7 @@
 }
 
 @import "hero";
+@import "adventures";
 
 *{
   margin: 0;
@@ -38,6 +39,26 @@ body {
 .section {
   width: 100%;
   padding: 50px 0;
+  @media only screen and (min-width: 760px) {
+    padding: 60px 0;
+  }
+}
+.section-title {
+  font-family: 'Quiza Pro', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #8C3848;
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+  height: 100%;
+  @media only screen and (min-width: 760px) {
+    padding: 0 30px;
+  }
+
 }
 
 .button {
