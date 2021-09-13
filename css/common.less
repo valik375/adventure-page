@@ -1,0 +1,63 @@
+//compress: true
+
+@font-face {
+  font-family: 'TT Commons';
+  src: url('../fonts/TTCommons-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Commons';
+  src: url('../fonts/TTCommons-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Quiza Pro';
+  src: url('../fonts/Quiza-Pro-Regular.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "hero";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'TT Commons', sans-serif;
+}
+.section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  cursor: pointer;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 20px 0 !important;
+  height: 50px;
+  border-radius: 10px;
+  transition: all, .25s;
+}
+.button_orange {
+  background-color: #FC654C;
+}
+.button_orange:hover {
+  background-color: darken(#FC654C, 10%);
+}
