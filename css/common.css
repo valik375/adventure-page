@@ -195,27 +195,33 @@
   width: 24px;
   height: 24px;
 }
-.upcoming__header {
+.past__footer {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
-.upcoming__counter {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #8C3848;
-  border-radius: 10px;
-  padding-top: 7.5px;
+.past__show-more {
+  margin: 0 auto;
+  cursor: pointer;
+  width: 100%;
+  max-width: 340px;
+  font-family: 'TT Commons', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: #8C3848;
-  margin-left: 15px;
+  text-align: center;
+  color: #FC654C;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FC654C;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.25s;
+}
+.past__show-more:hover {
+  border-color: #fb3a1a;
+  color: #fb3a1a;
 }
 * {
   margin: 0;
@@ -257,6 +263,14 @@ body {
     padding: 0 30px;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 .button {
   font-weight: 500;
   font-size: 18px;
@@ -275,6 +289,31 @@ body {
 }
 .button:hover {
   background-color: #fb3a1a;
+}
+.section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.section-header__title {
+  font-size: 33px;
+  line-height: 39px;
+}
+.section-header__counter {
+  padding: 7.5px 13px 0 13px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8C3848;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C3848;
+  margin-left: 15px;
 }
 .card-wrapper {
   width: 100%;
@@ -346,7 +385,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #FC654C;
-  margin-bottom: 8px;
 }
 .event-card__date {
   font-weight: 500;
@@ -355,6 +393,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #BABABA;
+  margin-top: 8px;
 }
 .event-card__stats {
   margin-top: 15px;

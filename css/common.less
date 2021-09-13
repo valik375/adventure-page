@@ -24,7 +24,7 @@
 
 @import "hero";
 @import "adventures";
-@import "upcoming";
+@import "past";
 
 *{
   margin: 0;
@@ -61,7 +61,12 @@ body {
   @media only screen and (min-width: 760px) {
     padding: 0 30px;
   }
-
+  @media only screen and (min-width: 1280px) {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 .button {
   font-weight: 500;
@@ -83,6 +88,31 @@ body {
   background-color: darken(#FC654C, 10%);
 }
 
+.section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.section-header__title {
+  font-size: 33px;
+  line-height: 39px;
+}
+.section-header__counter {
+  padding: 7.5px 13px 0 13px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8C3848;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C3848;
+  margin-left: 15px;
+}
 .card-wrapper {
   width: 100%;
   display: flex;
@@ -151,7 +181,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #FC654C;
-  margin-bottom: 8px;
 }
 .event-card__date {
   font-weight: 500;
@@ -160,6 +189,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #BABABA;
+  margin-top: 8px;
 }
 .event-card__stats {
   margin-top: 15px;
